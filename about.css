@@ -1,0 +1,176 @@
+
+/* Base Styles */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    transition: transform 0.3s ease;
+  }
+  
+  .container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #111827;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Self Description Box */
+  .description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+  }
+  
+  /* Projects Grid */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .project-box {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #4f46e5;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-box h2 {
+    margin: 0 0 10px;
+    color: #4f46e5;
+  }
+  
+  .project-box p {
+    color: #374151;
+    margin-bottom: 10px;
+  }
+  
+  .project-box a {
+    text-decoration: none;
+    color: #1e40af;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  button, .btn-link {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  button:hover, .btn-link:hover {
+    background-color: #4338ca;
+  }
+  
+  /* Social Links */
+  .socials a {
+    color: #1e40af;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .socials a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+  }
+  
+  .dark-mode .card,
+  .dark-mode .description,
+  .dark-mode .project-box {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border: 1px solid #374151;
+  }
+  
+  .dark-mode h1,
+  .dark-mode .title,
+  .dark-mode .bio {
+    color: #e0f2fe;
+  }
+  
+  .dark-mode .socials a,
+  .dark-mode a {
+    color: #BB86FC;
+  }
+  
+  .dark-mode .socials a:hover,
+  .dark-mode a:hover {
+    color: #3700B3;
+  }
+  
+  .dark-mode button,
+  .dark-mode .btn-link {
+    background-color: #475569;
+    color: #e2e8f0;
+  }
+  
+  .dark-mode button:hover,
+  .dark-mode .btn-link:hover {
+    background-color: #64748b;
+  }
+
+  
+  .clock {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    color: #4f46e5;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Highlight effect */
+  .project-box.highlight {
+    border-color: #16a34a;
+    background-color: #f0fdf4;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+  }
+  
